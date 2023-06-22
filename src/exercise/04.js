@@ -63,7 +63,7 @@ function Game() {
   const moves = (
     <>
       {history.map((_, i) => (
-        <li>
+        <li key={i}>
           <button
             type="button"
             onClick={() => setTurn(i)}
